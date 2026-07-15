@@ -1,0 +1,33 @@
+{
+  "notice": "Conceptual, non-runnable example. URLs, credentials, commands, organization identifiers, and production settings are intentionally omitted.",
+  "connections": {
+    "github": {
+      "purpose": "Read and maintain durable architecture, specifications, implementation artifacts, and handoffs",
+      "transport": "MCP",
+      "access": [
+        "repository metadata",
+        "read approved files",
+        "write approved documentation artifacts"
+      ],
+      "credentials": "Supplied through the approved client secret store; never committed"
+    },
+    "hercules": {
+      "purpose": "Inspect the live application, review implementation history, dispatch approved work, and read completion reports",
+      "transport": "MCP",
+      "access": [
+        "read app metadata",
+        "read implementation threads",
+        "dispatch read-only diagnostics",
+        "dispatch approved implementation prompts"
+      ],
+      "credentials": "Managed by the connected client; never committed"
+    }
+  },
+  "control_policy": {
+    "read_only_diagnostics": "permitted",
+    "approved_in_scope_iterations": "permitted",
+    "net_new_product_scope": "human approval required",
+    "production_publish": "human controlled",
+    "secret_or_customer_data_exposure": "prohibited"
+  }
+}
