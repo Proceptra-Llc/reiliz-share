@@ -1,0 +1,31 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Data, exports, and logs
+*.csv
+*.tsv
+*.sqlite
+*.sqlite3
+*.db
+*.log
+*.jsonl
+exports/
+data/
+data-stores/
+backups/
+
+# Generated and local files
+.DS_Store
+Thumbs.db
+node_modules/
+dist/
+build/
+coverage/
+.tmp/
+tmp/
