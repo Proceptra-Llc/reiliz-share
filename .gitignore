@@ -19,6 +19,7 @@ exports/
 data/
 data-stores/
 backups/
+ghl-probe-out/
 
 # Generated and local files
 .DS_Store
